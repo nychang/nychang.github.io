@@ -12,6 +12,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
+    background-color: #FFFFF3
 }
 
 h1,
@@ -71,15 +72,15 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: #1f8dd6;
+    background-color: #ED6A5A;
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
 }
 
 a.pure-button-primary {
-    background: white;
-    color: #1f8dd6;
+    background: #ED6A5A;
+    color: #FFFFF3;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -91,13 +92,13 @@ a.pure-button-primary {
  */
 
 .home-menu {
-    padding: 0.5em;
-    text-align: center;
+    padding: 0 0 2.5em 0;
+    text-align: left;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    background: #00D9C0;
+    color: #FFFFF3;
 }
-.home-menu {
-    background: #2d3e50;
-}
+
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
     border-bottom: none;
@@ -106,23 +107,23 @@ a.pure-button-primary {
 }
 
 .home-menu .pure-menu-heading {
-    color: white;
+    color: #FFFFF3;;
     font-weight: 400;
     font-size: 120%;
 }
 
 .home-menu .pure-menu-selected a {
-    color: white;
+    color: #DCD6F7;
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: #FFFFF3;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #AECFE5;
+    color: #DCD6F7;
 }
 
 
@@ -132,7 +133,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
+    background: #42CAFD;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
