@@ -11,7 +11,7 @@
 body {
     line-height: 1.7em;
     color: #7f8c8d;
-    font-size: 13px;
+    font-size: 15px;
     background-color: #FFFFF3
 }
 
@@ -23,7 +23,22 @@ h5,
 h6,
 label {
     color: #34495e;
+    font-family: "Montserrat", "Helvetica", sans-serif;
+    /*font-family: "BioRhyme", "Helvetica", sans-serif;*/
+    /*font-family: "Bree Serif", "Helvetica", sans-serif;*/
+    /*font-family: "Quando", "Helvetica", sans-serif;*/
+
+    letter-spacing: 0.1em;
+
 }
+
+p {
+    font-family: "Poppins", "Helvetica", sans-serif;
+
+    /*font-family: "Rubik", "Helvetica", sans-serif;*/
+
+}
+
 
 .pure-img-responsive {
     max-width: 100%;
@@ -98,6 +113,8 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
     background: #00D9C0;
     color: #FFFFF3;
+    font-family: "Oxygen", "Helvetica", sans-serif;
+    font-weight: bold;
 }
 
 .pure-menu.pure-menu-fixed {
@@ -109,7 +126,6 @@ a.pure-button-primary {
 
 .home-menu .pure-menu-heading {
     color: #FFFFF3;;
-    font-weight: 400;
     text-transform: none;
 }
 
