@@ -12,7 +12,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 15px;
-    background-color: #FFFFF3
+    background-color: red
 }
 
 h1,
@@ -155,6 +155,18 @@ a.pure-button-primary {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash-container-custom {
+    background: #42CAFD;
+    z-index: 1;
+    /*overflow: hidden;*/
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -170,17 +182,17 @@ a.pure-button-primary {
     top: 0px; left: 0; bottom: 0; right: 0;
     text-align: center;
     /*text-transform: uppercase;*/
+
 }
 
 .splash-custom {
-
 }
 
 /* This is the main heading that appears on the blue section */
-.splash-greeting {
+.splash-head {
     width: 100%;
     font-family: "Shrikhand", "Helvetica", sans-serif;
-    font-size: 50px;
+    font-size: 20px;
     /*font-weight: bold;*/
     color: white;
     /*border: 3px solid white;*/
@@ -188,6 +200,8 @@ a.pure-button-primary {
     font-weight: 100;
     /*border-radius: 5px;*/
     line-height: 1em;
+    margin-top: 2em;
+    margin-bottom: 0;
 }
 
 /* This is the subheading that appears on the blue section */
