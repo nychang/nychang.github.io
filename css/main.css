@@ -92,6 +92,7 @@ a.pure-button-primary {
  */
 
 .home-menu {
+    width: 100%;
     padding: 0 0 2.5em 0;
     text-align: left;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
