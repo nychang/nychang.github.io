@@ -12,7 +12,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 15px;
-    background-color: red
+    background-color: #42CAFD;
 }
 
 h1,
@@ -155,42 +155,44 @@ a.pure-button-primary {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: auto;
+    height: 71%;
     top: 0;
     left: 0;
-    position: fixed !important;
+    /*position: fixed !important;*/
 }
 
 .splash-container-custom {
     background: #42CAFD;
     z-index: 1;
-    /*overflow: hidden;*/
+    overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 100%;
+    height: 71%;
     top: 0;
     left: 0;
-    position: fixed !important;
+    margin-bottom: 2em;
+    /*position: fixed !important;*/
 }
 
 .splash {
     /* absolute center .splash within .splash-container */
-    /*width: 100%;*/
-    /*height: 80%;*/
+    width: 100%;
+    height: 71%;
     margin: auto;
     position: absolute;
-    top: 0px; left: 0; bottom: 0; right: 0;
+    top: 0; left: 0; bottom: 0; right: 0;
     text-align: center;
     /*text-transform: uppercase;*/
 
 }
 
 .splash-custom {
+    height: 71%;
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    width: 100%;
+    /*width: 100%;*/
     font-family: "Shrikhand", "Helvetica", sans-serif;
     font-size: 20px;
     /*font-weight: bold;*/
@@ -200,7 +202,7 @@ a.pure-button-primary {
     font-weight: 100;
     /*border-radius: 5px;*/
     line-height: 1em;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 0;
 }
 
@@ -227,7 +229,7 @@ div.splash-subhead p {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    /*top: 70%;*/
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -313,6 +315,8 @@ div.splash-subhead p {
     .l-box-lrg {
         border: none;
     }
+
+    
 
 }
 
