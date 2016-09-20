@@ -68,6 +68,22 @@ a:hover {
 
 }
 
+.header-image {
+    max-width: 25%;
+}
+
+.header-image path {
+    fill: #34495e;
+}
+
+.header-image rect {
+    fill: #34495e;
+}
+
+.header-image polygon {
+    fill: #34495e;
+}
+
 .bookmark {
     padding-top: 2.4em;
 }
@@ -326,7 +342,7 @@ div.splash-subhead p {
     color: #FFFFF3;
 }
 
-.content-secondary-head {
+.content-head-light {
     color: #FFFFF3;
 }
 
@@ -344,7 +360,7 @@ div.splash-subhead p {
     color: #FFFFF3;
 }
 
-.content-secondary {
+.content-purple {
     background: #DCD6F7;
     /*background: #A792D1;*/
     /*background: #C5AEF2;*/
@@ -353,7 +369,7 @@ div.splash-subhead p {
 
 }
 
-.content-tertiary {
+.content-blue {
     background: #42CAFD;
     /*background: #A792D1;*/
     /*background: #C5AEF2;*/
