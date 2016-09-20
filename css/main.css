@@ -141,6 +141,10 @@ a:hover {
     border-radius: 5px;
 }
 
+/*.pure-button-splash {
+    vertical-align: bottom;
+}*/
+
 .pure-button-primary:hover {
     /*filter: brightness(0%);*/
     background-color: #B25043;
@@ -152,7 +156,18 @@ a.pure-button-primary {
     background: #ED6A5A;
     color: #FFFFF3;
     border-radius: 5px;
-    font-size: 120%;
+    /*font-size: 120%;*/
+    max-width: 90%;
+    /*position: absolute;*/
+    /*bottom: 1.6em;*/
+    /*text-align: center;*/
+
+}
+
+.centerize {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -220,12 +235,13 @@ a.pure-button-primary {
 .splash-container-custom {
     background: #42CAFD;
     z-index: 1;
-    overflow: hidden;
+    /*overflow: hidden;*/
     /* The following styles are required for the "scroll-over" effect */
-    width: 100%;
+    width: 90%;
     height: 71%;
-    top: 0;
-    left: 0;
+    /*top: 0;*/
+    /*left: 0;*/
+    margin: auto;
     margin-bottom: 8em;
     /*position: fixed !important;*/
 }
@@ -272,10 +288,13 @@ a.pure-button-primary {
     padding: 1em;
     margin: 1em 1em;
     text-align: center;
+    min-height: 90%;
+    position: relative;
+    text-align: center;
 }
 
 div.splash-subhead p {
-    padding: 0.8em 0 0.8em 0;
+    padding: 0em 0 1em 0;
 }
 
 /*
