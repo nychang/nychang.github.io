@@ -52,6 +52,10 @@ p {
 
 }
 
+.bookmark {
+    padding-top: 2.4em;
+}
+
 #linklist li {
     display: inline;
     list-style-type: none;
