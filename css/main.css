@@ -307,6 +307,10 @@ div.splash-subhead p {
     color: #FFFFF3;
 }
 
+.content-secondary-head {
+    color: #FFFFF3;
+}
+
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
     color: #1f8dd6;
@@ -323,6 +327,15 @@ div.splash-subhead p {
 
 .content-secondary {
     background: #DCD6F7;
+    /*background: #A792D1;*/
+    /*background: #C5AEF2;*/
+    /*color: #FFFFF3;*/
+    color: #FFFFFC;
+
+}
+
+.content-tertiary {
+    background: #42CAFD;
     /*background: #A792D1;*/
     /*background: #C5AEF2;*/
     /*color: #FFFFF3;*/
