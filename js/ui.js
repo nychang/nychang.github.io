@@ -31,9 +31,13 @@ function closeMenu() {
 }
 
 document.getElementById('toggle').addEventListener('click', function (e) {
+    e.preventDefault();
     toggleMenu();
+});
+
+document.getElementById('toggle-menu-close').addEventListener('click', function (e) {
+    closeMenu();
 });
 
 window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
 })(this, this.document);
-
