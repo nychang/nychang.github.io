@@ -138,7 +138,7 @@ a:hover {
     background-color: #ED6A5A;
     color: white;
     padding: 0.5em 2em;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 /*.pure-button-splash {
@@ -155,7 +155,7 @@ a:hover {
 a.pure-button-primary {
     background: #ED6A5A;
     color: #FFFFF3;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     /*font-size: 120%;*/
     max-width: 90%;
     /*position: absolute;*/
@@ -284,7 +284,7 @@ a.pure-button-primary {
     letter-spacing: 0.05em;
     /*opacity: 0.8;*/
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 1em;
     margin: 1em 1em;
     text-align: center;
