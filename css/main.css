@@ -34,8 +34,21 @@ label {
 
 p {
     font-family: "Poppins", "Helvetica", sans-serif;
+}
 
-    /*font-family: "Rubik", "Helvetica", sans-serif;*/
+.form-block {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.text-input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #E1E7ED;
+    
 
 }
 
@@ -43,6 +56,15 @@ p {
     display: inline;
     list-style-type: none;
     padding-right: 20px;
+}
+
+.submit-button {
+    margin: 3em auto;
+    display: block;
+}
+
+.horizontal-center {
+    margin: auto;
 }
 
 
