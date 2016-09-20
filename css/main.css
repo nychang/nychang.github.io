@@ -37,7 +37,7 @@ p {
 }
 
 .form-block {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: block;
 }
@@ -48,6 +48,7 @@ p {
     padding: 0.5em;
     margin-bottom: 1em;
     border: 1px solid #E1E7ED;
+    box-shadow: none;
     
 
 }
@@ -202,7 +203,7 @@ a.pure-button-primary {
     height: 71%;
     top: 0;
     left: 0;
-    margin-bottom: 2em;
+    margin-bottom: 8em;
     /*position: fixed !important;*/
 }
 
@@ -226,7 +227,7 @@ a.pure-button-primary {
 .splash-head {
     /*width: 100%;*/
     font-family: "Shrikhand", "Helvetica", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     /*font-weight: bold;*/
     color: white;
     /*border: 3px solid white;*/
