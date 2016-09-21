@@ -70,10 +70,16 @@ a:hover {
 
 .header-image {
     max-width: 25%;
+    height: 6em;
+    margin-bottom: 1em;
 }
 
 .header-image path {
     fill: #34495e;
+}
+
+.header-image-light path {
+    fill: #FFFFF3;
 }
 
 .header-image rect {
@@ -202,6 +208,7 @@ a.pure-button-primary {
     color: #FFFFF3;
     font-family: "Oxygen", "Helvetica", sans-serif;
     font-weight: bold;
+    font-size: 90%;
 }
 
 .pure-menu.pure-menu-fixed {
@@ -307,6 +314,7 @@ a.pure-button-primary {
     min-height: 90%;
     position: relative;
     text-align: center;
+    font-size: 110%;
 }
 
 div.splash-subhead p {
@@ -317,6 +325,11 @@ div.splash-subhead p {
  * -- CONTENT STYLES --
  * This represents the content area (everything below the blue section)
  */
+
+.content-block {
+    width: 80%;
+    margin: auto;
+}
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
@@ -349,6 +362,8 @@ div.splash-subhead p {
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
     color: #1f8dd6;
+    /*width: 80%;*/
+    /*margin: auto;*/
 }
     .content-subhead i {
         margin-right: 7px;
