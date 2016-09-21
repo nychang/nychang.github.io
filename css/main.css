@@ -54,6 +54,7 @@ a:hover {
 .form-block {
     width: 90%;
     margin: auto;
+    margin-top: -4em;
     display: block;
 }
 
@@ -125,7 +126,7 @@ a:hover {
 
 .l-box-lrg {
     padding: 2em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    /*border-bottom: 1px solid rgba(0,0,0,0.1);*/
 }
 
 .is-center {
@@ -138,6 +139,32 @@ a:hover {
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
  */
+
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder { 
+  color: #E5E5E3;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+
+
+
+/*input[type=radio] {
+ width: 44px; height: 44px;
+ -webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;
+ border: 1px solid #bbb;
+}*/
+
+
+
+
 .pure-form label {
     margin: 1em 0 0;
     font-weight: bold;
@@ -150,6 +177,22 @@ a:hover {
     font-size: 100%;
     width: 100%;
     margin-bottom: 1em;
+}
+
+.pure-form input[placeholder] {
+    color: red;
+}
+
+.radio-input {
+    font-family: "Poppins", "Helvetica", sans-serif;
+    padding-left: 0.4em;
+    padding-bottom: 0.5em;
+}
+
+.text-input {
+    font-family: "Poppins", "Helvetica", sans-serif;
+    font-weight: 100;
+    color: red;
 }
 
 /*
@@ -329,6 +372,7 @@ div.splash-subhead p {
 .content-block {
     width: 80%;
     margin: auto;
+    text-align: justify;
 }
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
