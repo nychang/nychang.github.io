@@ -369,11 +369,7 @@ div.splash-subhead p {
  * This represents the content area (everything below the blue section)
  */
 
-.content-block {
-    width: 80%;
-    margin: auto;
-    text-align: justify;
-}
+
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
@@ -491,6 +487,11 @@ div.splash-subhead p {
         border: none;
     }
 
+    .content-block {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+
     
 
 }
@@ -505,4 +506,10 @@ div.splash-subhead p {
     .splash-head {
         font-size: 300%;
     }
+
+    .content-block {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
 }
