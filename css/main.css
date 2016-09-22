@@ -14,7 +14,11 @@ body {
     color: #49475B;
     color: #514F66;
     color: #66637F;
-    color: #7C7C7B;
+    color: #1F4659;
+    color: #2C657F;
+    color: #616D72;
+    color: #728999;
+    color: #2d3e50;
     font-size: 15px;
     background-color: #42CAFD;
 }
@@ -26,7 +30,7 @@ h4,
 h5,
 h6,
 label {
-    color: #34495e;
+    color: #2d3e50;
     font-family: "Montserrat", "Helvetica", sans-serif;
     /*font-family: "BioRhyme", "Helvetica", sans-serif;*/
     /*font-family: "Bree Serif", "Helvetica", sans-serif;*/
@@ -76,7 +80,7 @@ a:hover {
 }
 
 .header-image path {
-    fill: #34495e;
+    fill: #2d3e50;
 }
 
 .header-image-light path {
@@ -84,11 +88,11 @@ a:hover {
 }
 
 .header-image rect {
-    fill: #34495e;
+    fill: #2d3e50;
 }
 
 .header-image polygon {
-    fill: #34495e;
+    fill: #2d3e50;
 }
 
 
@@ -97,8 +101,12 @@ a:hover {
     width: 20%;
 }
 
+.content-subhead-image-light {
+    width: 20%;
+}
+
 .content-subhead-image path {
-    fill: #34495e;
+    fill: #2d3e50;
 }
 
 .content-subhead-image-light path {
@@ -106,15 +114,19 @@ a:hover {
 }
 
 .content-subhead-image rect {
-    fill: #34495e;
+    fill: #2d3e50;
+}
+
+.content-subhead-image-light rect {
+    fill: #FFFFF3;
 }
 
 .content-subhead-image polygon {
-    fill: #34495e;
+    fill: #2d3e50;
 }
 
 .content-subhead-image circle {
-    fill: #34495e;
+    fill: #2d3e50;
 }
 
 
@@ -443,13 +455,17 @@ div.splash-subhead p {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    color: #1f8dd6;
+    color: #2d3e50;
     /*width: 80%;*/
     /*margin: auto;*/
 }
-    .content-subhead i {
-        margin-right: 7px;
-    }
+
+.content-subhead-light {
+    color: #FFFFF3;
+    /*width: 80%;*/
+    /*margin: auto;*/
+}
+
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
@@ -459,10 +475,11 @@ div.splash-subhead p {
 
 .content-purple {
     background: #DCD6F7;
-    /*background: #A792D1;*/
-    /*background: #C5AEF2;*/
-    /*color: #FFFFF3;*/
-    color: #FFFFFC;
+    background: #CCB7F7;
+    color: #FFFFF3;
+    /*color: #FFFFFC;*/
+    /*color: #277A99;*/
+    /*color: white;*/
 
 }
 
@@ -470,9 +487,27 @@ div.splash-subhead p {
     background: #42CAFD;
     /*background: #A792D1;*/
     /*background: #C5AEF2;*/
-    /*color: #FFFFF3;*/
-    color: #FFFFFC;
+    color: #FFFFF3;
+    /*color: #F2F2E6;*/
 
+}
+
+
+
+.content-blue a {
+    color: #DCD6F7;
+}
+
+.content-blue a:hover {
+    color: #ED6A5A;
+}
+
+.content-purple a {
+    color: #F2F2A9;
+}
+
+.content-purple a:hover {
+    color: #F2F2A9;
 }
 
 /* This is the class used for the footer */
@@ -537,6 +572,10 @@ div.splash-subhead p {
         width: 90%;
     }
 
+    .content-subhead-image-light {
+        width: 90%;
+    }
+
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
  * On desktops and other large devices, we want to over-ride some
@@ -553,6 +592,10 @@ div.splash-subhead p {
     }
 
     .content-subhead-image {
+        width: 100%;
+    }
+
+    .content-subhead-image-light {
         width: 100%;
     }
 }
