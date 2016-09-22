@@ -42,6 +42,19 @@ label {
 
 p {
     font-family: "Poppins", "Helvetica", sans-serif;
+    
+    font-family: "Roboto Slab", serif;
+
+    /*font-family: "Karma", serif;
+    letter-spacing: 0.02em;
+    font-size: 20px;*/
+
+
+    /*font-family: "Martel", serif;*/
+
+    /*font-family: "Kreon", serif;*/
+    /*letter-spacing: 0.02em;*/
+    /*font-size: 20px;*/
 }
 
 a {
@@ -91,8 +104,16 @@ a:hover {
     fill: #2d3e50;
 }
 
+.header-image-light rect {
+    fill: #FFFFF3;
+}
+
 .header-image polygon {
     fill: #2d3e50;
+}
+
+.header-image-light polygon {
+    fill: #FFFFF3;
 }
 
 
@@ -127,8 +148,16 @@ a:hover {
     fill: #2d3e50;
 }
 
+.content-subhead-image-light polygon {
+    fill: #FFFFF3;
+}
+
 .content-subhead-image circle {
     fill: #2d3e50;
+}
+
+.content-subhead-image-light circle {
+    fill: #FFFFF3;
 }
 
 
@@ -292,8 +321,10 @@ a.pure-button-primary {
     padding: 0 0 2.5em 0;
     text-align: left;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-    background: #00D9C0;
-    color: #FFFFF3;
+    background: #2D3E50;
+    background: #CCB7F7;
+    background: #E0EBE8;
+    background: white;
     font-family: "Oxygen", "Helvetica", sans-serif;
     font-weight: bold;
     font-size: 90%;
@@ -307,7 +338,8 @@ a.pure-button-primary {
 }
 
 .home-menu .pure-menu-heading {
-    color: #FFFFF3;;
+    color: #FFFFF3;
+    color: #919996;
     text-transform: none;
 }
 
@@ -317,6 +349,7 @@ a.pure-button-primary {
 
 .home-menu a {
     color: #FFFFF3;
+    color: #C6D1CE;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
@@ -495,6 +528,28 @@ div.splash-subhead p {
 
 
 
+.content-red {
+    background: #ED6A5A;
+    /*background: #A792D1;*/
+    /*background: #C5AEF2;*/
+    color: #FFFFF3;
+    /*color: #F2F2E6;*/
+
+}
+
+
+.content-green {
+    background: #00D9C0;
+    color: #FFFFF3;
+    /*color: #F2F2E6;*/
+}
+
+.content-white {
+    background: #FFFFF3;
+    color: black;
+}
+
+
 .content-blue a {
     color: #DCD6F7;
 }
@@ -511,11 +566,31 @@ div.splash-subhead p {
     color: #F2F2A9;
 }
 
+.content-red a {
+    color: #F2F2A9;
+}
+
+.content-red a:hover {
+    color: #FFFFF3;
+}
+
+.content-green a {
+    color: #F2F2A9;
+}
+
+.content-green a:hover {
+    color: #FFFFF3;
+}
+
+
+
 /* This is the class used for the footer */
 .footer {
-    background: #111;
+    background: #2D3E50;
     font-family: "Poppins", "Helvetica", sans-serif;
     font-size: 14px;
+    color: #C3DCE5;
+    line-height: 1.5em;
 }
 
 /*
@@ -538,6 +613,8 @@ div.splash-subhead p {
     menu items to the right. */
     .home-menu {
         text-align: left;
+        font-size: 80%;
+
     }
         .home-menu ul {
             float: right;
@@ -588,6 +665,8 @@ div.splash-subhead p {
  */
 @media (min-width: 78em) {
     /* We increase the header font size even more */
+
+
     .splash-head {
         font-size: 300%;
     }
