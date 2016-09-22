@@ -91,6 +91,37 @@ a:hover {
     fill: #34495e;
 }
 
+
+
+.content-subhead-image {
+    width: 20%;
+}
+
+.content-subhead-image path {
+    fill: #34495e;
+}
+
+.content-subhead-image-light path {
+    fill: #FFFFF3;
+}
+
+.content-subhead-image rect {
+    fill: #34495e;
+}
+
+.content-subhead-image polygon {
+    fill: #34495e;
+}
+
+.content-subhead-image circle {
+    fill: #34495e;
+}
+
+
+
+
+
+
 .bookmark {
     padding-top: 2.4em;
 }
@@ -369,6 +400,11 @@ div.splash-subhead p {
  * This represents the content area (everything below the blue section)
  */
 
+ .content-block {
+    margin: auto;
+    text-align: justify;
+}
+
 
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
@@ -380,6 +416,12 @@ div.splash-subhead p {
     background: white;
     background-color: #FFFFF3;
 
+}
+
+.bar {
+    color: #FFFFF3;
+    background: #FFFFF3;
+    background-color: #FFFFF3;
 }
 
 /* This is the class used for the main content headers (<h2>) */
@@ -488,13 +530,12 @@ div.splash-subhead p {
     }
 
     .content-block {
-    width: 90%;
-    margin: auto;
-    text-align: justify;
+        width: 90%;
+    }
 
-    
-
-}
+    .content-subhead-image {
+        width: 90%;
+    }
 
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
@@ -509,7 +550,9 @@ div.splash-subhead p {
 
     .content-block {
     width: 80%;
-    margin: auto;
-    text-align: justify;
-}
+    }
+
+    .content-subhead-image {
+        width: 100%;
+    }
 }
