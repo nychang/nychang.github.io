@@ -45,6 +45,7 @@ p {
     
     font-family: "Roboto Slab", serif;
     font-weight: 400;
+    font-size: 16px;
 
     /*font-family: "Karma", serif;
     letter-spacing: 0.02em;
@@ -671,9 +672,6 @@ div.splash-subhead p {
 @media (min-width: 78em) {
     /* We increase the header font size even more */
 
-    p {
-        font-weight: 100;
-    }
 
 
     .splash-head {
