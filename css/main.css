@@ -95,7 +95,7 @@ a:hover {
 }
 
 .header-image path {
-    fill: #2d3e50;
+    fill: #21A596;
 }
 
 .header-image-light path {
@@ -326,7 +326,7 @@ a.pure-button-primary {
     background: #2D3E50;
     background: #CCB7F7;
     background: #E0EBE8;
-    background: white;
+    background: #FFFFF3;
     font-family: "Oxygen", "Helvetica", sans-serif;
     font-weight: bold;
     font-size: 90%;
@@ -340,7 +340,7 @@ a.pure-button-primary {
 }
 
 .home-menu .pure-menu-heading {
-    color: #FFFFF3;
+    /*color: #FFFFF3;*/
     color: #919996;
     text-transform: none;
 }
@@ -542,22 +542,29 @@ div.splash-subhead p {
 
 .content-green {
     background: #00D9C0;
+    background: #13BFAB;
     color: #FFFFF3;
     /*color: #F2F2E6;*/
 }
 
 .content-white {
-    background: #FFFFF3;
-    color: black;
+    /*background: #F2F9F7;*/
+    background: #F4FFFB;
+    background: #F7FFFC;
+    color: #21A596;
+}
+
+.content-white h1, h2, h3, h4, label {
+    color: #21A596;
 }
 
 
 .content-blue a {
-    color: #DCD6F7;
+    color: #F2F2A9;
 }
 
 .content-blue a:hover {
-    color: #ED6A5A;
+    color: #DCD6F7;
 }
 
 .content-purple a {
@@ -573,7 +580,7 @@ div.splash-subhead p {
 }
 
 .content-red a:hover {
-    color: #FFFFF3;
+    color: #DCD6F7;
 }
 
 .content-green a {
@@ -581,7 +588,7 @@ div.splash-subhead p {
 }
 
 .content-green a:hover {
-    color: #FFFFF3;
+    color: #DCD6F7;
 }
 
 
