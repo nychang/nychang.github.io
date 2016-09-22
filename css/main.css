@@ -44,6 +44,7 @@ p {
     font-family: "Poppins", "Helvetica", sans-serif;
     
     font-family: "Roboto Slab", serif;
+    font-weight: 400;
 
     /*font-family: "Karma", serif;
     letter-spacing: 0.02em;
@@ -604,6 +605,10 @@ div.splash-subhead p {
     body {
         font-size: 18px;
     }
+
+    p {
+        font-weight: 300;
+    }
     /* We want to give the content area some more padding */
     .content {
         padding: 1em;
@@ -665,6 +670,10 @@ div.splash-subhead p {
  */
 @media (min-width: 78em) {
     /* We increase the header font size even more */
+
+    p {
+        font-weight: 100;
+    }
 
 
     .splash-head {
