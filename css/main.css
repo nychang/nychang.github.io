@@ -512,6 +512,7 @@ div.splash-subhead p {
 .content-purple {
     background: #DCD6F7;
     background: #CCB7F7;
+    background: #7F3371;
     color: #FFFFF3;
     /*color: #FFFFFC;*/
     /*color: #277A99;*/
@@ -521,6 +522,7 @@ div.splash-subhead p {
 
 .content-blue {
     background: #42CAFD;
+    background: #16AEE5;
     /*background: #A792D1;*/
     /*background: #C5AEF2;*/
     color: #FFFFF3;
@@ -532,6 +534,7 @@ div.splash-subhead p {
 
 .content-red {
     background: #ED6A5A;
+    background: #E54A39;
     /*background: #A792D1;*/
     /*background: #C5AEF2;*/
     color: #FFFFF3;
