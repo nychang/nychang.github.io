@@ -162,7 +162,23 @@ a:hover {
     fill: #FFFFF3;
 }
 
+#pamlab path, ellipse, line {
+    fill: none;
+    stroke: #FFFFF3;
+}
 
+#gdg polygon {
+    fill: #FFFFF3;
+    stroke: #16AEE5;
+}
+#gha-frame rect {
+    fill: none;
+    stroke: #FFFFF3;
+}
+#gha-sudo path {
+    fill: #E54A39;
+    stroke: none;
+}
 
 
 
