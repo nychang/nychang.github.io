@@ -1,0 +1,37 @@
+.svg-light path, rect, polygon, circle {
+    fill: #FFFFF3;
+}
+
+#pamlab path, ellipse, line {
+    fill: none;
+    stroke: #FFFFF3;
+}
+
+#scrubbie .a {
+    fill: none;
+}
+#scrubbie .b{
+    fill: #FFFFF3;
+}
+#scrubbie .c {
+    fill: none;
+    stroke-width: 0.3;
+    stroke: red;
+}
+#scrubbie .d{
+    fill: red;
+}
+
+#gha-frame rect {
+    fill: none;
+    stroke: #FFFFF3;
+}
+#gha-sudo path {
+    fill: #E54A39;
+    stroke: none;
+}
+
+#gdg polygon {
+    fill: #FFFFF3;
+    stroke: #16AEE5;
+}

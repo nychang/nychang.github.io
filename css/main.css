@@ -92,93 +92,16 @@ a:hover {
     max-width: 25%;
     height: 6em;
     margin-bottom: 1em;
+    border: none;
 }
-
-.header-image path {
-    fill: #21A596;
-}
-
-.header-image-light path {
-    fill: #FFFFF3;
-}
-
-.header-image rect {
-    fill: #2d3e50;
-}
-
-.header-image-light rect {
-    fill: #FFFFF3;
-}
-
-.header-image polygon {
-    fill: #2d3e50;
-}
-
-.header-image-light polygon {
-    fill: #FFFFF3;
-}
-
-
 
 .content-subhead-image {
     width: 20%;
     margin: 3em 0 -3em 0;
+    border: none;
 }
 
-.content-subhead-image-light {
-    width: 20%;
-    margin: 3em 0 -3em 0;    
-}
 
-.content-subhead-image path {
-    fill: #2d3e50;
-}
-
-.content-subhead-image-light path {
-    fill: #FFFFF3;
-}
-
-.content-subhead-image rect {
-    fill: #2d3e50;
-}
-
-.content-subhead-image-light rect {
-    fill: #FFFFF3;
-}
-
-.content-subhead-image polygon {
-    fill: #2d3e50;
-}
-
-.content-subhead-image-light polygon {
-    fill: #FFFFF3;
-}
-
-.content-subhead-image circle {
-    fill: #2d3e50;
-}
-
-.content-subhead-image-light circle {
-    fill: #FFFFF3;
-}
-
-#pamlab path, ellipse, line {
-    fill: none;
-    stroke: #FFFFF3;
-}
-
-#gdg polygon {
-    fill: #FFFFF3;
-    stroke: #16AEE5;
-}
-#gha-frame rect {
-    fill: none;
-    stroke: #FFFFF3;
-}
-#gha-sudo path {
-    fill: #E54A39;
-    stroke: none;
-}
 
 
 
