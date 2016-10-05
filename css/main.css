@@ -10,14 +10,6 @@
  */
 body {
     line-height: 1.7em;
-    color: #7f8c8d;
-    color: #49475B;
-    color: #514F66;
-    color: #66637F;
-    color: #1F4659;
-    color: #2C657F;
-    color: #616D72;
-    color: #728999;
     color: #2d3e50;
     font-size: 15px;
     background-color: #42CAFD;
@@ -32,38 +24,20 @@ h6,
 label {
     color: #2d3e50;
     font-family: "Montserrat", "Helvetica", sans-serif;
-    /*font-family: "BioRhyme", "Helvetica", sans-serif;*/
-    /*font-family: "Bree Serif", "Helvetica", sans-serif;*/
-    /*font-family: "Quando", "Helvetica", sans-serif;*/
-
     letter-spacing: 0.1em;
 
 }
 
 p {
-    font-family: "Poppins", "Helvetica", sans-serif;
-    
     font-family: "Roboto Slab", serif;
     font-weight: 400;
     font-size: 18px;
-
-    /*font-family: "Karma", serif;
-    letter-spacing: 0.02em;
-    font-size: 20px;*/
-
-
-    /*font-family: "Martel", serif;*/
-
-    /*font-family: "Kreon", serif;*/
-    /*letter-spacing: 0.02em;*/
-    /*font-size: 20px;*/
 }
 
 a {
-    font-family: "Poppins", "Helvetica", sans-serif;
     color: #42CAFD;
-    /*color: #ED6A5A;*/
     text-decoration: none;
+    border-bottom: 1px dotted #42CAFD;
 }
 
 a:hover {
@@ -84,8 +58,6 @@ a:hover {
     margin-bottom: 1em;
     border: 1px solid #E1E7ED;
     box-shadow: none;
-    
-
 }
 
 .header-image {
@@ -177,16 +149,6 @@ a:hover {
 }
 
 
-
-/*input[type=radio] {
- width: 44px; height: 44px;
- -webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;
- border: 1px solid #bbb;
-}*/
-
-
-
-
 .pure-form label {
     margin: 1em 0 0;
     font-weight: bold;
@@ -219,7 +181,6 @@ a:hover {
 
 /*
  * -- PURE BUTTON STYLES --
- * I want my pure-button elements to look a little different
  */
 .pure-button {
     background-color: #ED6A5A;
@@ -228,27 +189,14 @@ a:hover {
     border-radius: 50px;
 }
 
-/*.pure-button-splash {
-    vertical-align: bottom;
-}*/
-
 .pure-button-primary:hover {
-    /*filter: brightness(0%);*/
-    background-color: #B25043;
-    background-color: #CC4D3D;
     background-color: #D85241;
 }
 
 a.pure-button-primary {
     background: #ED6A5A;
     color: #FFFFF3;
-    /*border-radius: 5px;*/
-    /*font-size: 120%;*/
     max-width: 90%;
-    /*position: absolute;*/
-    /*bottom: 1.6em;*/
-    /*text-align: center;*/
-
 }
 
 .centerize {
@@ -460,20 +408,12 @@ div.splash-subhead p {
     background: #CCB7F7;
     background: #7F3371;
     color: #FFFFF3;
-    /*color: #FFFFFC;*/
-    /*color: #277A99;*/
-    /*color: white;*/
-
 }
 
 .content-blue {
     background: #42CAFD;
     background: #16AEE5;
-    /*background: #A792D1;*/
-    /*background: #C5AEF2;*/
     color: #FFFFF3;
-    /*color: #F2F2E6;*/
-
 }
 
 
@@ -481,11 +421,7 @@ div.splash-subhead p {
 .content-red {
     background: #ED6A5A;
     background: #E54A39;
-    /*background: #A792D1;*/
-    /*background: #C5AEF2;*/
     color: #FFFFF3;
-    /*color: #F2F2E6;*/
-
 }
 
 
@@ -493,22 +429,14 @@ div.splash-subhead p {
     background: #00D9C0;
     background: #13BFAB;
     color: #FFFFF3;
-    /*color: #F2F2E6;*/
 }
 
 .content-white {
-    /*background: #F2F9F7;*/
-    background: #F4FFFB;
-    background: #F7FFFC;
     background: #FFFFF3;
-    color: #21A596;
-    color: #16AEE5;
     color: #2D3E50;
-
 }
 
 .content-white h1, h2, h3, h4, label {
-    color: #21A596;
     color: #2D3E50;
 }
 
@@ -636,8 +564,6 @@ div.splash-subhead p {
  */
 @media (min-width: 78em) {
     /* We increase the header font size even more */
-
-
 
     .splash-head {
         font-size: 300%;
