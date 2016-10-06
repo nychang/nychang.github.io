@@ -177,6 +177,18 @@ footer {
     z-index: 1;
 }
 
+.big-button {
+    background: #CC0010;
+    padding: 0.5em 2em;
+    border-radius: 50px;
+}
+a.big-button {
+    color: #FFFFF3;
+}
+.big-button:hover {
+    background: #99000C;
+}
+
 .section-image {
     max-width: 50%;
     height: 6em;
@@ -263,50 +275,12 @@ div.project-image {
 
 
 
+/*-- LANDSCAPE PHONE , TABLET (AND UP) MEDIA QUERIES --*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.pure-button {
-    background-color: #CC0010;
-    color: white;
-    padding: 0.5em 2em;
-    border-radius: 50px;
-}
-
-.pure-button-primary:hover {
-    background-color: #99000C;
-}
-
-a.pure-button-primary {
-    background: #CC0010;
-    color: #FFFFF3;
-    max-width: 90%;
-}
-
-
-
-
-
-/*
- * -- TABLET (AND UP) MEDIA QUERIES --
- */
-@media (min-width: 48em) {
+@media (min-width: 52em) {
 
     body {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     section {
@@ -347,9 +321,9 @@ a.pure-button-primary {
         max-height: 4em;
     }
 
-/*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- */
+
+/*-- DESKTOP (AND UP) MEDIA QUERIES --*/
+
 @media (min-width: 68em) {
 
     section {
@@ -387,7 +361,7 @@ a.pure-button-primary {
 @media (min-width: 78em) {
 
     body {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     section {
