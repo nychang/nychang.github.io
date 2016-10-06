@@ -14,7 +14,7 @@ body {
     color: #FFFFF3;
     font-family: "Poppins", "Helvetica", sans-serif;
     font-size: 15px;
-    background-color: magenta;
+    background: yellow;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
@@ -24,11 +24,6 @@ header {
     width: 100%;
     background: #FFF;
     padding: 2em 2em 2em 2em;
-
-    /*background: #FFFFE5;*/
-    /*clear: both;*/
-    /*background-image: url("../img/bitmoji-talk-soon.jpg");*/
-
 }
 
 nav {
@@ -151,7 +146,6 @@ footer {
     margin: auto;
     text-align: center;
     font-size: 110%;
-    /*font-family: "Poppins", "Helvetica", sans-serif;*/
     font-weight: 400;
     z-index: 4;
 }
@@ -199,33 +193,24 @@ a.big-button {
     fill: #FFFFF3;
 }
 
-.section-purple {
-    background: #DCD6F7;
-    background: #CCB7F7;
-    background: #7F3371;
+/*pass/fail WCAG 2.0 contrast ratio relative to #FFFFF3*/
+.section-magenta {
     /*passes 4.6*/
     background: #DD188B;
 }
 .section-blue {
-    background: #42CAFD;
-    background: #16AEE5;
-    background: #15A4D8;
-    /*background: #149BCC;*/
+    /*passes 3*/
+    background: #109FD3;
 }
 .section-red {
-    background: #ED6A5A;
-    background: #E54A39;
+    /*passes 5.8*/
     background: #CC0010;
-    background: #111D44; /*blue*/
+}
+.section-navy {
+    /*passes 14.4*/
     background: #162559;
 }
 .section-green {
-    /*passes 4.6*/
-    background: #00871F;
-    /*fails 2.1*/
-    background: #32CD32;
-    /*fails 2.8*/
-    background: #23B223;
     /*passes 3.2*/
     background: #21A521;
 }
