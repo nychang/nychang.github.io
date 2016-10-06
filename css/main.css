@@ -22,7 +22,7 @@ body {
 
 header {
     width: 100%;
-    background: #000;
+    background: #FFFFE5;
     color: red;
     padding: 2em 2em 2em 2em;
 
@@ -110,7 +110,8 @@ article h2 {
 
 footer {
     background: #2D3E50;
-    background: #0A1128;
+    background: #111D44;
+    background: #CC0010;
     margin: auto;
     padding: 1em;
     text-align: center;
@@ -123,7 +124,7 @@ footer {
 .splash-head {
     font-family: "Shrikhand", "Helvetica", sans-serif;
     font-size: 30px;
-    color: #FFF;
+    color: #000;
     padding: 0.5em 1em;
     font-weight: 100;
     line-height: 1em;
@@ -135,9 +136,9 @@ footer {
     text-align: right;
 }
 .splash-subhead {
-    color: #FFF;
+    color: #000;
     letter-spacing: 0.05em;
-    border: 3px solid white;
+    border: 3px solid #000;
     border-radius: 20px;
     text-align: center;
     min-height: 90%;
@@ -167,22 +168,31 @@ footer {
     background: #DCD6F7;
     background: #CCB7F7;
     background: #7F3371;
+    /*passes 4.6*/
+    background: #DD188B;
 }
 .section-blue {
     background: #42CAFD;
     background: #16AEE5;
     background: #15A4D8;
+    /*background: #149BCC;*/
 }
 .section-red {
     background: #ED6A5A;
     background: #E54A39;
     background: #CC0010;
+    background: #111D44; /*blue*/
+    background: #162559;
 }
 .section-green {
-    background: #00D9C0;
-    /*background: #13BFAB;*/
-    background: #007F24;
+    /*passes 4.6*/
     background: #00871F;
+    /*fails 2.1*/
+    background: #32CD32;
+    /*fails 2.8*/
+    background: #23B223;
+    /*passes 3.2*/
+    background: #21A521;
 }
 
 .project-image {
@@ -247,18 +257,18 @@ div.project-image {
 
 
 .pure-button {
-    background-color: #ED6A5A;
+    background-color: #CC0010;
     color: white;
     padding: 0.5em 2em;
     border-radius: 50px;
 }
 
 .pure-button-primary:hover {
-    background-color: #D85241;
+    background-color: #99000C;
 }
 
 a.pure-button-primary {
-    background: #ED6A5A;
+    background: #CC0010;
     color: #FFFFF3;
     max-width: 90%;
 }
