@@ -128,7 +128,7 @@ footer {
     font-family: "Shrikhand", "Helvetica", sans-serif;
     font-size: 30px;
     color: #000;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em 0.5em 0em;
     font-weight: 100;
     line-height: 1em;
     margin-bottom: 0;
@@ -320,6 +320,7 @@ a.pure-button-primary {
 
     .splash-head {
         font-size: 250%;
+        padding-left: 2em;
     }
 
     .splash-subhead {
@@ -358,6 +359,7 @@ a.pure-button-primary {
 
     .splash-head {
         font-size: 300%;
+        padding-left: 3em;
     }
 
     .splash-subhead {
