@@ -89,8 +89,9 @@ section h1 {
 }
 
 section a {
+    color: #FBFF12;
     color: #FFFFF3;
-    font-weight: 700;
+    border-bottom: 1px dotted #FFFFF3;
 }
 section a:hover {
     color: #F80;
@@ -194,6 +195,13 @@ a.big-button {
 .section-line rect {
     fill: #FFFFF3;
 }
+.section-image-artsy {
+    max-width: 90%;
+    margin-bottom: 1em;
+}
+.section-line-artsy rect {
+    fill: #333;
+}
 
 /*pass/fail WCAG 2.0 contrast ratio relative to #FFFFF3*/
 .section-magenta {
@@ -215,6 +223,13 @@ a.big-button {
 .section-green {
     /*passes 3.2*/
     background: #21A521;
+}
+.section-white {
+    background: #FFF;
+    color: #333;
+}
+.section-white a {
+    color: #109FD3;
 }
 
 .project-image {
@@ -239,6 +254,9 @@ div.project-image {
 .project-description {
     display: inline;
 }
+.project-description-artsy {
+
+}
 
 .linklist {
     padding-left: 0;
@@ -249,6 +267,10 @@ div.project-image {
     padding-right: 2em;
     font-size: 1.2em;
 }
+.linklist a {
+    border-bottom: none;
+}
+
 
 .typeform-widget {
     width: 100%;
@@ -264,6 +286,14 @@ div.project-image {
 
 
 /*-- LANDSCAPE PHONE , TABLET (AND UP) MEDIA QUERIES --*/
+
+
+@media (min-width: 40em) {
+
+    .section-image-artsy {
+        max-width: 70%;
+    }
+}
 
 @media (min-width: 52em) {
 
@@ -296,6 +326,10 @@ div.project-image {
     .section-image {
         max-width: 60%;
         height: 8em;
+    }
+
+    .section-image-artsy {
+        max-width: 60%;
     }
 
     .project-image {
