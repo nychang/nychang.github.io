@@ -108,15 +108,16 @@ article h2 {
 }
 
 footer {
-    background: #2D3E50;
-    background: #111D44;
     background: #CC0010;
     margin: auto;
     padding: 1em;
     text-align: center;
-    font-size: 14px;
-    color: #C3DCE5;
-    line-height: 1.5em;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+footer a {
+    color: #FBFF12;
+    color: #7FF2FF;
 }
 
 
