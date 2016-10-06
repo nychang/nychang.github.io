@@ -19,7 +19,7 @@
     stroke: red;
 }
 #scrubbie .d{
-    fill: red;
+    fill: #00871F;
 }
 
 #gha-frame rect {
@@ -27,11 +27,14 @@
     stroke: #FFFFF3;
 }
 #gha-sudo path {
-    fill: #E54A39;
+    fill: #00871F;
     stroke: none;
 }
 
 #gdg polygon {
     fill: #FFFFF3;
-    stroke: #16AEE5;
+    stroke: #15A4D8;
+}
+#gdg path {
+    stroke: #15A4D8;
 }
