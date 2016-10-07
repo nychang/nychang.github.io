@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/nav.js"></script>
     <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<![endif]-->
@@ -24,17 +25,27 @@
 
     <header role="banner" id="splash">
 
-        <nav aria-label="Main Navigation">
-            <ul>
+        <nav class="short-nav" aria-label="Main Navigation">
+            <ul class="navbar" id="nav-toggle">
+                <li><a href="#splash"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+                <li><a href="#bootcamp-projects"">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="long-nav" aria-label="Main Navigation">
+            <ul class="navbar" id="nav-toggle">
                 <li><a href="#splash"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
                 <li><a href="#bootcamp-projects">Bootcamp Projects</a></li>
                 <li><a href="#current-projects">Current Projects</a></li>
                 <li><a href="#side-projects">Side Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
             </ul>
         </nav>
+
+        <!-- <li class="hamburger"><a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a></li> -->
 
         <!-- <div class="bitmoji-text"><h1 class="splash-head">Hi! I'm Kathy. And you're fabulous.</h1></div> -->
         <!-- <img class="bitmoji" src="img/bitmoji-talk-soon.jpg"> -->
