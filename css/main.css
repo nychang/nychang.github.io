@@ -115,8 +115,8 @@ a:hover {
 
 section {
     text-align: center;
-    margin: 0;
-    padding: 0 1.5em 2em 1.5em;
+    margin: 0em;
+    padding: 3em 1.5em 2em 1.5em;
 
 }
 section h1 {
@@ -136,7 +136,7 @@ section a:hover {
 
 article {
     text-align: justify;
-    margin-top: 2em;
+    margin-bottom: 4em;
     clear: left;
 }
 /*?? Why? I set the body color to this.*/
@@ -333,7 +333,7 @@ div.project-image {
 }
 
 .profile-photo {
-    max-width: 50%;
+    max-width: 40%;
     border-radius: 20em;
     overflow: hidden;
 }
@@ -361,10 +361,10 @@ div.project-image {
     }
 }
 
-@media (min-width: 52em) {
+@media (min-width: 48em) {
 
     body {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     section {
@@ -403,6 +403,12 @@ div.project-image {
     }
     .project-image-logo {
         max-height: 4em;
+    }
+
+@media (min-width: 52em) {
+
+    body {
+        font-size: 17px;
     }
 
 @media (min-width: 56em) {
