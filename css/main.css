@@ -203,21 +203,24 @@ nav.long-nav {
     font-family: "Poppins", "Helvetica", sans-serif;
 }
 
-.bitmoji {
-    position: absolute;
-    right: 0;
-
-}
-.bitmoji-text {
-    display: inline-flex;
-    width: 80%;
-    margin-bottom: 12em;
-}
-.bitmoji-image {
+/*.bitmoji {
     display: inline-flex;
     position: absolute;
     right: 0;
     z-index: 1;
+
+}*/
+.bitmoji-image {
+    max-width: 40%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 3em;
+}
+.bitmoji-text {
+    display: inline-flex;
+    width: 80%;
+    /*margin-bottom: 8em;*/
 }
 
 .big-button {
@@ -359,6 +362,9 @@ div.project-image {
     .profile-photo {
         max-width: 40%;
     }
+    .bitmoji-image {
+        max-width: 35%;
+    }
 }
 
 @media (min-width: 48em) {
@@ -410,6 +416,10 @@ div.project-image {
     body {
         font-size: 17px;
     }
+    .bitmoji-image {
+        max-width: 30%;
+    }
+}    
 
 @media (min-width: 56em) {
     nav.short-nav {
