@@ -27,7 +27,10 @@ header {
 }
 
 nav {
+    /*fails 2.4 with #FFF*/
     background: #F80;
+    /*passes 3 with #FFF*/
+    /*background: #E57A00;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -118,6 +121,13 @@ footer {
 footer a {
     color: #FBFF12;
     color: #7FF2FF;
+}
+
+code {
+    font-size: 1.1em;
+    background: #EEE;
+    border: 1px solid #CCC;
+    border-radius: 0.25em;
 }
 
 
