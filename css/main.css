@@ -50,7 +50,6 @@ nav li a, footer a {
 }
 
 main {
-    background: yellow;
     margin: 0;
     padding: 0;
 }
@@ -278,6 +277,20 @@ div.project-image {
     margin-bottom: 4em;
 }
 
+.article-image {
+    text-align: center;
+    margin: auto;
+}
+.article-image img {
+    width: 90%;
+}
+
+.profile-photo {
+    max-width: 50%;
+    border-radius: 20em;
+    overflow: hidden;
+}
+
 
 
 
@@ -292,6 +305,12 @@ div.project-image {
 
     .section-image-artsy {
         max-width: 70%;
+    }
+    .article-image img {
+        width: 70%;
+    }
+    .profile-photo {
+        max-width: 40%;
     }
 }
 
