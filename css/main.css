@@ -1,6 +1,6 @@
 @font-face {
     font-family: whiteboard;
-    src: url(../KGShadowOfTheDay.ttf);
+    src: url(../KGLifeisMessy.ttf);
 }
 
 * {
@@ -19,6 +19,7 @@ body {
     color: #FFFFF3;
     font-family: "Poppins", "Helvetica", sans-serif;
     font-size: 15px;
+    font-weight: 400;
     background: white;
     -webkit-font-smoothing: antialiased;
     margin: 0;
@@ -37,6 +38,7 @@ header {
 nav {
     /*fails 2.4 with #FFF*/
     background: #F80;
+    font-weight: 500;
     /*passes 3 with #FFF*/
     /*background: #E57A00;*/
     position: fixed;
@@ -101,8 +103,14 @@ main {
 h1,
 h2,
 h3 {
-    font-family: "Montserrat", "Helvetica", sans-serif;
+    font-family: "Poppins", "Helvetica", sans-serif;
+    font-weight: 600;
+    /*font-family: "Work Sans", "Helvetica", sans-serif;*/
     letter-spacing: 0.1em;
+}
+h1 {
+    font-size: 1.8em;
+    font-weight: 700;
 }
 
 p {
@@ -158,6 +166,7 @@ footer {
     padding: 1em;
     text-align: center;
     font-size: 0.9em;
+    font-weight: 400;
     line-height: 1.4em;
 }
 footer a {
@@ -204,8 +213,10 @@ nav.long-nav {
 
 .splash-head {
     
-    font-family: "whiteboard", "Helvetica", sans-serif;
-    font-family: "Work Sans", "Helvetica", sans-serif;
+    /*font-family: "whiteboard", "Helvetica", sans-serif;*/
+    /*font-family: "Poppins", "Helvetica", sans-serif;
+    font-weight: 700;*/
+    font-family: "Work Sans", "Arial Black", "Helvetica", sans-serif;
     font-weight: 900;
     font-size: 2.4em;
     letter-spacing: 0;
@@ -324,7 +335,7 @@ a.big-button {
     margin-bottom: 1em;
 }
 .section-line-artsy rect {
-    fill: #333;
+    fill: #555;
 }
 
 /*pass/fail WCAG 2.0 contrast ratio relative to #FFFFF3*/
@@ -354,6 +365,9 @@ a.big-button {
 }
 .section-white a {
     color: #109FD3;
+}
+.section-white h1 {
+    color: #555;
 }
 
 .project-image {
@@ -449,6 +463,9 @@ div.project-image {
         /*margin: 4em 1em 2em 0em;*/
         max-width: 80%;
     }
+    .splash-head {
+        font-size: 2.8em;
+    }
 }
 
 @media (min-width: 48em) {
@@ -463,7 +480,7 @@ div.project-image {
     }
 
     .splash-head {
-        font-size: 4em;
+        font-size: 3.2em;
     }
 
     .splash-subhead {
@@ -531,7 +548,7 @@ div.project-image {
 
 
     .splash-head {
-        font-size: 4.5em;
+        font-size: 3.6em;
     }
 
     .splash-subhead {
@@ -575,6 +592,9 @@ div.project-image {
     .bitmoji-text {
         margin-left: 5em;
 
+    }
+    .splash-head {
+        font-size: 4em;
     }
 
 
