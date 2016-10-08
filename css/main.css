@@ -1,3 +1,8 @@
+@font-face {
+    font-family: whiteboard;
+    src: url(../KGShadowOfTheDay.ttf);
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -183,13 +188,30 @@ nav.long-nav {
   background: linear-gradient(to 45deg, #CCF1FF, #FFF); /* Standard syntax */
 }
 
+.post-it {
+    width: 60%;
+    height: 10em;
+    background-color: yellow;
+    color: black;
+    font-size: 2em;
+    padding: 1em;
+    margin: 2em 0 0 0;
+    /* Rotate div */
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+}
+
 .splash-head {
-    font-family: "Shrikhand", "Helvetica", sans-serif;
-    font-size: 30px;
+    
+    font-family: "whiteboard", "Helvetica", sans-serif;
+    font-family: "Work Sans", "Helvetica", sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+    letter-spacing: 0;
     color: #000;
     /*color: #FFF;*/
     padding: 0em 0.5em 0em 0em;
-    font-weight: 100;
     line-height: 1em;
     margin-bottom: 0;
     z-index: 1;
@@ -441,7 +463,7 @@ div.project-image {
     }
 
     .splash-head {
-        font-size: 250%;
+        font-size: 4em;
     }
 
     .splash-subhead {
@@ -509,7 +531,7 @@ div.project-image {
 
 
     .splash-head {
-        font-size: 300%;
+        font-size: 4.5em;
     }
 
     .splash-subhead {
