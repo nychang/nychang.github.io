@@ -105,7 +105,6 @@ h2,
 h3 {
     font-family: "Poppins", "Helvetica", sans-serif;
     font-weight: 600;
-    /*font-family: "Work Sans", "Helvetica", sans-serif;*/
     letter-spacing: 0.1em;
 }
 h1 {
@@ -212,30 +211,19 @@ nav.long-nav {
 }
 
 .splash-head {
-    
-    /*font-family: "whiteboard", "Helvetica", sans-serif;*/
-    /*font-family: "Poppins", "Helvetica", sans-serif;
-    font-weight: 700;*/
     font-family: "Work Sans", "Arial Black", "Helvetica", sans-serif;
     font-weight: 900;
     font-size: 2.4em;
     letter-spacing: 0;
     color: #000;
-    /*color: #FFF;*/
     padding: 0em 0.5em 0em 0em;
     line-height: 1em;
     margin-bottom: 0;
     z-index: 1;
-    /*text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;*/
 }
 .splash-head-outro {
     margin-top: 0;
     margin-bottom: 0.5em;
-    /*text-align: right;*/
     display: inline;
 }
 .splash-subhead {
@@ -308,17 +296,24 @@ nav.long-nav {
     padding-left: 0em;
     margin-left: -1em;
 }
+.terminal-text {
+    font-family: "Oxygen Mono";
+    /*color: #2AFF00;
+    color: #54FF00;*/
+    color: #00FF00;
+}
 
 .big-button {
     background: #CC0010;
     padding: 0.5em 2em;
     border-radius: 50px;
 }
-a.big-button {
+a.terminal-link {
     color: #FFFFF3;
 }
-.big-button:hover {
+a.terminal-link:hover {
     background: #99000C;
+    border: 1px solid red;
 }
 
 .section-image {
