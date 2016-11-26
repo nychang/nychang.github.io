@@ -210,6 +210,10 @@ nav.long-nav {
   transform: translateY(-50%);
 }
 
+.center-horizontally {
+    text-align: center;
+}
+
 .secondary {
     background: #FFF;
 }
@@ -391,6 +395,14 @@ a.terminal-link:hover {
     color: #555;
 }
 
+.image-artsy-vertical {
+    max-height: 25em;
+    vertical-align: middle;
+}
+.image-artsy-horizontal {
+    max-width: 70%;
+    vertical-align: middle;
+}
 
 .project-image {
     max-width: 25%;
