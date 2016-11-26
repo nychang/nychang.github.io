@@ -67,6 +67,8 @@
 
             <p><a href="#postgresql-queries">Common SQL Queries</a></p>
 
+            <p><a href="#postgresql-files">SQL + Files = A Good Time</a></p>
+
             </article>
 
         </section>
@@ -381,41 +383,71 @@ Garfield,5,cat</pre>
 
             <p class="tip">Ascending order is the default, but you can add ASC after the column name if you'd like.  For example, <code>ORDER BY age DESC, name ASC</code>.</p>
 
-            <p></p>
+            <h2>Select Things Using Aggregate Functions</h2>
 
-            <pre class="terminal"></pre>
+            <p>Common SQL Aggregate Functions:
+            <ul>
+                <li><code>COUNT()</code></li>
+                <li><code>MIN()</code></li>
+                <li><code>MAX()</code></li>
+                <li><code>AVG()</code></li>
+                <li><code>SUM()</code></li>
+            </ul>
+            </p>
 
-            <pre></pre>
+            <p>General format:</p>
 
-            <p></p>
+            <pre class="terminal">SELECT <em>aggregate_function</em>(<em>column_name</em>) FROM <em>table_name</em>;</pre>
 
-            <pre class="terminal"></pre>
+            <p>Example:</p>
 
-            <pre></pre>
+            <pre class="terminal">SELECT AVG(age) FROM pets;</pre>
 
-            <p></p>
+            <pre>        avg
+--------------------
+ 4.7272727272727273
+(1 row)</pre>
 
-            <pre class="terminal"></pre>
+            <p>Count all of the rows (even if they include null values) in the <em>pets</em> table.</p>
 
-            <pre></pre>
+            <pre class="terminal">SELECT COUNT(*) FROM pets;</pre>
 
-            <p></p>
+            <pre> count
+-------
+    11
+(1 row)</pre>
 
-            <pre class="terminal"></pre>
+            <p>Count the number of dogs and label the result 'NumberOfDogs'.  Specifically, count the number of values (excluding null) in the <em>id</em> column in the <em>pets</em> table for only dogs.</p>
 
-            <pre></pre>
+            <pre class="terminal">SELECT COUNT(id) AS NumberOfDogs FROM pets WHERE type = 'dog';</pre>
 
-            <p></p>
+            <pre> numberofdogs
+--------------
+            4
+(1 row)</pre>
 
-            <pre class="terminal"></pre>
+            <p>Count the number of pets who are younger than the average age of all the pets in the table.</p>
 
-            <pre></pre>
+            <pre class="terminal">SELECT COUNT(*) AS NumberOfYoungerPets FROM pets WHERE age < (SELECT AVG(age) FROM pets);</pre>
 
-            <p></p>
+            <pre> numberofyoungerpets
+---------------------
+                   6
+(1 row)</pre>
 
-            <pre class="terminal"></pre>
+            <p>Similar idea, except this time show the <em>name</em>, <em>age</em>, and <em>type</em> columns and sort the results by age.</p>
 
-            <pre></pre>
+            <pre class="terminal">SELECT name, age, type FROM pets WHERE age < (SELECT AVG(age) FROM pets) ORDER BY age;</pre>
+
+            <pre>  name  | age |  type
+--------+-----+--------
+ Dory   |   1 | fish
+ Jerry  |   1 | mouse
+ Snoopy |   1 | dog
+ Fluffy |   3 | rabbit
+ Lassie |   4 | dog
+ Toto   |   4 | dog
+(6 rows)</pre>
 
             <p></p>
 
@@ -442,6 +474,58 @@ Garfield,5,cat</pre>
 
         </section>
 
+        <section class="section-white" id="postgresql-files">
+
+        <h1>SQL + Files = A Good Time</h1>
+        <svg class="section-line-artsy" width="200" height="10"><rect width="200" height="3" /></svg>
+
+            <article class="project-description-artsy">
+
+            <h2>Running Queries from a SQL File</h2>
+
+            <p>A sql file contains queries as is.  It's like copying the queries you'd normally write at a prompt and pasting them into a file.</p>
+
+            <p>For example, here are the contents of a sql file called <em>pets.sql</em> :</p>
+
+            <pre>SELECT * FROM pets;
+
+SELECT name, type, age FROM pets WHERE type != 'dog' AND age > 3 ORDER BY age DESC, name;</pre>
+
+            <p>To run the queries in a sql file from a psql prompt (like <code>postgres=#</code>):</p>
+
+            <pre class="terminal">\i '/path/to/file/file-name.sql'</pre>
+
+            <p>Example:</p>
+
+            <pre class="terminal">\i '/Users/kathychang/Desktop/pets.sql'</pre>
+
+            <p>From a terminal prompt (a shell, like <code>~$</code>):</p>
+
+            <pre class="terminal">psql -f 'path/to/file/file-name.sql' database_name</pre>
+
+            <p>Example:</p>
+
+            <pre class="terminal">psql -f '/Users/kathychang/Desktop/pets.sql' postgres</pre>
+
+            <h2>Saving the Output from Queries to a File</h2>
+
+            <p>The following will save the output to a file <em>instead of</em> displaying it on the screen, and it will keep doing so until you switch it off by entering <code>\o</code> at the psql prompt again.</p>
+
+            <p>From the psql prompt (like <code>postgres=#</code>):</p>
+
+            <pre class="terminal">\o '/path/to/file/file-name.txt'</pre>
+
+            <p>Example:</p>
+
+            <pre class="terminal">\o '/Users/kathychang/Desktop/pets.txt'</pre>
+
+            <p>To send the output to the console screen again:</p>
+
+            <pre class="terminal">\o</pre>
+
+            </article>
+
+        </section>
 
 
     </main>
