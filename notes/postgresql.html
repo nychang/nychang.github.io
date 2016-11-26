@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html id="nychang-art" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="nychang">
+    <meta name="description" content="Wherein Kathy Chang presents her artsy side.">
+    <title>Holla!</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type='image/x-icon' />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <header role="banner" class="secondary" id="splash">
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Projects</a></li>
+                <!-- <li><a href="#scrubbie">Shower Scrubbie</a></li>
+                <li><a href="#pamlab">PAM Lab</a></li>
+                <li><a href="#nychang">nychang</a></li> -->
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+<!--         <section class="section-white" id="postgresql-TITLE">
+
+        <h1>TITLE</h1>
+        <svg class="section-line-artsy" width="200" height="10"><rect width="200" height="3" /></svg>
+
+            <article class="project-description-artsy">
+
+            <p></p>
+
+            </article>
+
+        </section> -->
+
+        <section class="section-white" id="postgresql-toc">
+
+        <img class="section-image-artsy" src="../img/logo-postgresql-text.png" alt="PostgreSQL logo">
+
+        <h1>Table of Contents</h1>
+        <svg class="section-line-artsy" width="200" height="10"><rect width="200" height="3" /></svg>
+
+            <article class="project-description-artsy">
+
+            <p><a href="#postgresql-about">But first...what is SQL, PostgreSQL, Postgres, and psql?</a></p>
+
+            <p><a href="#postgresql-install">Installing PostgreSQL on Mac OS X</a></p>
+
+            <p><a href="#postgresql-import-csv">Importing a CSV File</a></p>
+
+            <p><a href="#postgresql-queries">Common SQL Queries</a></p>
+
+            </article>
+
+        </section>
+
+        <section class="section-white" id="postgresql-about">
+
+        <h1>SQL, PostgreSQL, Postgres, and psql</h1>
+        <svg class="section-line-artsy" width="200" height="10"><rect width="200" height="3" /></svg>
+
+            <article class="project-description-artsy">
+
+            <p><strong>SQL</strong> stands for Stuctured Query Language. It's the most common language for relational database management systems.</p>
+
+            <p>A <a href="https://en.wikipedia.org/wiki/Relational_database" title="Wikipedia: Relational database" target="_blank">relational database</a> organizes data into <em>relations</em>, which...well, here's how the vocabulary breaks down in practice:
+            <ul>
+                <li>relation = table</li>
+                <li>field, attribute = column</li>
+                <li>record, tuple, instance = row</li>
+            </ul>
+            </p>
+
+            <p class="aside">If you're wondering, &quot;Is there some other way to organize data besides tables?&quot; <a href="https://en.wikipedia.org/wiki/Database_model" title="Wikipedia: Database model" target="_blank">Yes</a>.  Although you see tables come up in the other models, they're treated differently &mdash; not as relations but as objects or something else.</p>
+
+            <p><strong>PostgreSQL</strong> is an object-relational database management system.  <strong>Postgres</strong> is just a nickname for PostgreSQL.  An <a href="https://en.wikipedia.org/wiki/Object-relational_database" title="Wikipedia: Object-relational database" target="_blank">object-relational database</a> tries to combine the good parts of the relational and the object-oriented models.  For example, you can define your own data types and write simpler code to execute SQL queries.</p>
+
+            <p><strong>psql</strong> lets you interact with PostgreSQL in a terminal.  This is where you'd do SQL things like create tables and make queries.  psql has its own commands, apart from SQL.  The common psql commands are:</p>
+
+            <ul>
+                <li><code>\l</code> : list databases</li>
+                <li><code>\d</code> : list relations (tables) in the current database</li>
+                <li><code>\d <em>table_name</em></code> : describe the named table</li>
+                <li><code>\c <em>db_name</em></code> : connect (switch to) the named database</li>
+                <li><code>\q</code> : quit psql</li>
+            </ul>
+
+            <p>And here are some common SQL commands:</p>
+
+            <p>Create an empty table:
+            <pre class="terminal">CREATE TABLE table_name();</pre>
+            </p>
+
+            <p>Delete a table:
+            <pre class="terminal">DROP TABLE table_name;</pre>
+            </p>
+
+            <p>Create a defined table (one of the columns has to be labeled as the PRIMARY KEY):
+            <pre class="terminal">CREATE TABLE table_name(
+             column1_name datatype,
+             column2_name datatype
+);</pre>
+            </p>
+
+            <p class="warning">Don't forget the semi-colon to close a SQL command.  Also, when creating a table, don't forget the parentheses and commas to separate columns.</p>            
+
+            <p>An example of creating a defined table:
+            <pre class="terminal">CREATE TABLE employees(
+             id          int         PRIMARY KEY     NOT NULL,
+             name        char(50)    NOT NULL,
+             age         int         NOT NULL,
+             address     text,
+             salary      real
+);</pre>
+            </p>
+
+            <p>For more info on data types, <a href="https://www.postgresql.org/docs/9.6/static/datatype.html" title="PostgreSQL Documentation" target="_blank">see the docs</a> or <a href="https://www.tutorialspoint.com/postgresql/postgresql_data_types.htm" title="TutorialsPoint: PostgreSQL Data Types" target="_blank">TutorialsPoint</a>.</p>
+
+            <p class="tip">SQL keywords are case-insensitive, so you don't have to type them in uppercase.  It's just common to write them that way.</p>
+
+            <p>Here are some <a href="#postgresql-queries">common SQL queries</a>.</p>
+
+            </article>
+
+        </section>        
+
+        <section class="section-white" id="postgresql-install">
+
+        <h1>Installing PostgreSQL on Mac OS X</h1>
+        <svg class="section-line-artsy" width="200" height="10"><rect width="200" height="3" /></svg>
+
+            <article class="project-description-artsy">
+
+            <p>All of the code below is run in Terminal.</p>
+            <p>To install without Homebrew, see <a href="https://www.postgresql.org/docs/9.6/static/install-short.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a>.</p>
+
+            <h2>Uninstall Old Versions</h2>
+
+            <p><a href="http://www.postgresql.org/docs/9.6/interactive/backup.html" title="PostgreSQL Documentation" target="_blank" >Back up data</a>.</p>
+
+            <p>Uninstall Homebrew version(s) of PostgreSQL.  <code>--force</code> uninstalls <strong>all</strong> versions.</p>
+
+            <pre class="terminal">brew rm postgresql --force</pre>
+
+            <p>Uninstall other things manually.</p>
+
+            <p><a href="http://www.russbrooks.com/2010/11/25/install-postgresql-9-on-os-x" title="russbrooks" target="_blank"> russbrooks.com</a> had a couple other commands that didn't work for me. 9.6 is the PostgreSQL version number. Change as appropriate.</p>
+
+            <pre class="terminal">sudo rm -rf /Applications/PostgreSQL\ <em>9.6</em>
+sudo rm -rf /etc/postgres-reg.ini
+sudo rm -rf /Library/StartupItems/postgresql-<em>9.6</em>
+sudo rm -rf /Library/PostgreSQL/<em>9.6</em></pre>
+
+            <p><code>rm</code> by itself removes (deletes) a file. <code>rm -r</code> recursively deletes a directory. Adding <code>-f</code> (<code>rm -rf</code>) forces the deletion.</p>
+
+			<p>Restart and make sure there are no postgres processes running in Activity Monitor.</p>
+
+            <h2>Install PostgreSQL</h2>
+
+            <p>Skip Homebrew update if you updated recently.</p>
+
+            <pre class="terminal">brew update
+brew install postgresql</pre>
+
+            <p>Initialize the database.  One person said <em>postgres</em> is the default user account.  PostgreSQL says <em>postgres</em> is the PostgreSQL server.  Same difference?  Who knows.  Confusing.</p>
+
+            <pre class="terminal">initdb /usr/local/var/<em>postgres</em></pre>
+
+            <p>If it says that the directory exists, then remove it first before initializing.</p>
+
+            <pre class="terminal">rm -rf /usr/local/var/postgres
+initdb /usr/local/var/<em>postgres</em></pre>
+
+            <p>Or just install <a href="http://postgresapp.com/" title="Postgres.app" target="_blank">Postgres.app</a>, but you might have to delete the old postgres directory if it already exists.</p>
+
+            <h2>Start PostgreSQL Server</h2>
+
+            <p>If the initialization is successful, it'll say to start the database server using:</p>
+
+            <pre class="terminal">pg_ctl -D /usr/local/var/<em>postgres</em> -l logfile start</pre>
+            </p>
+
+            <p>Or (if you haven't already) just install <a href="http://postgresapp.com/" title="Postgres.app" target="_blank">Postgres.app</a> and double-click to start a server.  Postgres.app runs on port 5432.  There might be some yelling between the app and Terminal if they want to run on the same port or if there's already a server running.</p>
+
+            <h2>Start psql.</h2>
+
+            <p>If you want to interact with Postgres at the # prompt (like connect to databases, create tables, list anything, ...):
+
+            <pre class="terminal">psql <em>postgres</em></pre>
+
+            </p>
+
+            <p><em>postgres</em> is the database that was initialized earlier.  If you want to connect to a different database when you open psql, then use that database name instead.</p>
+
+            <p>After psql starts, you'll see <code>postgres=#</code> as the prompt.  When you enter <code>\l</code> to list all the databases &mdash; and assuming <em>postgres</em> is the only database that was initialized since installing PostgreSQL &mdash; there should be 3 databases listed: postgres, template0, template1.</p>
+
+            <p>For more psql goodness, <a href="https://www.postgresql.org/docs/9.6/static/app-psql.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>
+
+            <p>If you get error messages about a role (user) or a database not existing...</p>
+
+            <h2>Create User</h2>
+
+            <p>To create a superuser that can create databases:</p>
+
+            <pre class="terminal">createuser -P -s -e -d <em>some_username</em></pre>
+
+            <p> <code>-P</code> will prompt you for a password for the new user.  <code>-s</code> makes the new user a superuser.  <code>-e</code> echoes the commands that createuser generates and sends them to the server (I don't know what this means).  <code>-d</code> allows the new user to create databases.  See <a href="http://www.postgresql.org/docs/9.6/static/app-createuser.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a> for more details.
+            </p>
+
+            <h2>Create Database</h2>
+
+            <p>To create a database and assign it to an owner (ideally one with POWAH!):</p>
+
+            <pre class="terminal">createdb <em>some_database</em> -O <em>some_username</em></pre>
+
+            <p><code>-O</code> assigns a user as the owner of the database.  Add <code>-w</code> if you want don't want a password required.</p>
+            
+            <p>See <a href="http://www.postgresql.org/docs/9.6/static/app-createdb.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a> for more details.</p>
+
+            <h2>Delete Database</h2>
+
+            <pre class="terminal">dropdb <em>some_database</em></pre>
+
+            <h2>Other Randomness</h2>
+
+            <p>To find out the username a database is running under:
+
+            <pre class="terminal">ps aux | grep <em>database_name</em></pre>
+
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="http://mxcl.github.com/homebrew/" title="Homebrew" target="_blank" ><i class="fa fa-link" aria-hidden="true"></i> Homebrew</a>: package manager for OS X</li>
+            </ul>
+
+            </article>
+
+        </section>
+
+        <section class="section-white" id="postgresql-import-csv">
+
+        <h1>Importing a CSV File</h1>
+        <svg class="section-line-artsy" width="200" height="10"><rect width="200" height="3" /></svg>
+
+            <article class="project-description-artsy">
+
+            <p>First, create a table with columns that match the ones from the csv file.  The column names don't have to match, but the column data should.</p>
+
+            <p>For example, here are the contents of a file called <em>pets.csv</em>.  The first line is the header row with the names of the columns:</p>
+
+            <pre>name,age,type
+Lassie,4,dog
+Dory,1,fish
+Leonardo,12,turtle
+Tom,7,cat
+Jerry,1,mouse
+Kiara,6,cat
+Toto,4,dog
+Fluffy,3,rabbit
+Clifford,8,dog
+Snoopy,1,dog
+Garfield,5,cat</pre>
+
+            <p>Here's one way to create a corresponding table.  Notice how <em>name</em>, <em>age</em>, and <em>type</em> follow the same order as the columns in the csv file.</p>
+
+            <pre class="terminal">CREATE TABLE pets(
+             id     serial         NOT NULL   PRIMARY KEY,
+             name   varchar(30)    NOT NULL,
+             age    int            NOT NULL,
+             type   varchar(20)    NOT NULL
+);</pre>
+
+            <p>Then, to import the csv file, use the following pattern:</p>
+
+            <pre class="terminal">COPY <em>table_name</em>(<em>columns, to, copy, into</em>) FROM '<em>/path/to/file/file-name.csv</em>' DELIMITER ',' CSV HEADER;</pre>
+
+            <p class="tip">To find the file path, navigate to the file's directory and type <code>pwd</code> (print working directory).  The complete file path should include the file name (with the extension) at the end.</p>
+
+            <p>So for our <em>pets</em> example, the command would be:</p>
+
+            <pre class="terminal">COPY <em>pets</em>(<em>name, age, type</em>) FROM '<em>/Users/kathychang/Desktop/pets.csv</em>' DELIMITER ',' CSV HEADER;</pre>
+
+            <p>The column names listed in the parentheses are the columns in table you're copying into, not the column names in the data file you're copying from.  In other words, <code>COPY pets(name, age, type)</code> is short for "copy into the columns <em>name, age, type</em> in the table <em>pets</em>".</p>
+
+            <p>You don't need <code>HEADER</code> if the csv file doesn't include a header row.</p>
+
+            <p>You also don't need to write out all the column names if there is a one-to-one match between the columns in the table and the columns in the file.  In our <em>pets</em> example, we wrote out the column names because there is a mismatch: the table includes an <em>id</em> column, while the csv file doesn't.</p>
+
+            <p>For more info about <code>COPY</code>, <a href="https://www.postgresql.org/docs/9.6/static/sql-copy.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>            
+
+            </article>
+
+        </section>
+
+        <section class="section-white" id="postgresql-queries">
+
+        <h1>Common SQL Queries</h1>
+        <svg class="section-line-artsy" width="200" height="10"><rect width="200" height="3" /></svg>
+
+            <article class="project-description-artsy">
+
+            <p>Some example queries (in green) and their outputs (in white).  The commands are entered in psql (so the prompt looks something like <code>postgres=#</code>).</p>
+
+            <p>For more info on queries, <a href="https://www.postgresql.org/docs/9.6/static/tutorial-select.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>
+
+            <h2>SELECT: General Format</h2>
+
+            <pre class="terminal">SELECT <em>column_name(s)</em> FROM <em>table_name</em> WHERE <em>expression_to_match</em>;</pre>
+
+            <h2>Select Everything</h2>
+
+            <p>Select all of the columns for all of the pets (the rows) in the <em>pets</em> table.</p>
+
+            <pre class="terminal">SELECT * FROM pets;</pre>
+            <pre> id |   name   | age |  type
+----+----------+-----+--------
+  1 | Lassie   |   4 | dog
+  2 | Dory     |   1 | fish
+  3 | Leonardo |  12 | turtle
+  4 | Tom      |   7 | cat
+  5 | Jerry    |   1 | mouse
+  6 | Kiara    |   6 | cat
+  7 | Toto     |   4 | dog
+  8 | Fluffy   |   3 | rabbit
+  9 | Clifford |   8 | dog
+ 10 | Snoopy   |   1 | dog
+ 11 | Garfield |   5 | cat
+(11 rows)</pre>
+            
+            <h2>Select Specific Things</h2>
+            
+            <p>Select all of the columns for the pets that are dogs (the value in the <em>type</em> column matches 'dog').</p>
+
+            <pre class="terminal">SELECT * FROM pets WHERE type = 'dog';</pre>
+            <pre> id |   name   | age | type
+----+----------+-----+------
+  1 | Lassie   |   4 | dog
+  7 | Toto     |   4 | dog
+  9 | Clifford |   8 | dog
+ 10 | Snoopy   |   1 | dog
+(4 rows)</pre>
+
+            <p>Select only the <em>name</em>, <em>age</em>, and <em>id</em> columns (in that order) for the pets that are dogs.</p>
+
+            <pre class="terminal">SELECT name, age, id FROM pets WHERE type = 'dog';</pre>
+            <pre>   name   | age | id
+----------+-----+----
+ Lassie   |   4 |  1
+ Toto     |   4 |  7
+ Clifford |   8 |  9
+ Snoopy   |   1 | 10
+(4 rows)</pre>            
+
+            <p>Select only the <em>name</em>, <em>type</em>, and <em>age</em> columns for the pets that are not dogs and are older than 3.  Also, sort the results by <em>age</em> in descending order first, then by <em>name</em> in ascending order.</p>
+
+            <pre class="terminal">SELECT name, type, age FROM pets WHERE type != 'dog' AND age > 3 ORDER BY age DESC, name;</pre>
+
+            <pre>   name   |  type  | age
+----------+--------+-----
+ Leonardo | turtle |  12
+ Tom      | cat    |   7
+ Kiara    | cat    |   6
+ Garfield | cat    |   5
+(4 rows)</pre>
+
+            <p class="tip">Ascending order is the default, but you can add ASC after the column name if you'd like.  For example, <code>ORDER BY age DESC, name ASC</code>.</p>
+
+            <p></p>
+
+            <pre class="terminal"></pre>
+
+            <pre></pre>
+
+            <p></p>
+
+            <pre class="terminal"></pre>
+
+            <pre></pre>
+
+            <p></p>
+
+            <pre class="terminal"></pre>
+
+            <pre></pre>
+
+            <p></p>
+
+            <pre class="terminal"></pre>
+
+            <pre></pre>
+
+            <p></p>
+
+            <pre class="terminal"></pre>
+
+            <pre></pre>
+
+            <p></p>
+
+            <pre class="terminal"></pre>
+
+            <pre></pre>
+
+            <p></p>
+
+            <pre class="terminal"></pre>
+
+            <pre></pre>
+
+
+
+
+
+
+
+
+
+            
+            <p></p>
+
+            <pre class="terminal"></pre>
+
+            <pre></pre>
+
+            </article>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+    	Made with perseverance, patience, and playfulness.<br>
+    	(High-five if you're also pro-<a href="http://mentalfloss.com/article/33637/best-shots-fired-oxford-comma-wars" target="_blank">Oxford Comma</a>.)<br>
+        <a href="#splash">Back to top</a>
+    </footer>
+
+</body>
+
+</html>

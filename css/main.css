@@ -159,6 +159,13 @@ article h2 {
     color: #FFFFF3;
 }
 
+section ul {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
 footer {
     background: #CC0010;
     margin: auto;
@@ -167,6 +174,11 @@ footer {
     font-size: 0.9em;
     font-weight: 400;
     line-height: 1.4em;
+    /* Add the following for a sticky footer. */
+    /*position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999999;*/
 }
 footer a {
     /*color: #FBFF12;*/
@@ -180,8 +192,22 @@ code {
     border-radius: 0.25em;
 }
 
+pre {
+  background-color: #000;
+  font-family: "Oxygen Mono", Monaco, monospace;
+  color: #F8F8F8;
+  padding: 1em 0px 1em 1em;
+  margin-top: 0;
+}
+
 nav.long-nav {
     display: none;
+}
+
+.center-vertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .secondary {
@@ -296,8 +322,8 @@ nav.long-nav {
     padding-left: 0em;
     margin-left: -1em;
 }
-.terminal-text {
-    font-family: "Oxygen Mono";
+.terminal {
+    font-family: "Oxygen Mono", monospace;
     /*color: #2AFF00;
     color: #54FF00;*/
     color: #00FF00;
@@ -361,9 +387,10 @@ a.terminal-link:hover {
 .section-white a {
     color: #109FD3;
 }
-.section-white h1 {
+.section-white h1, .section-white h2 {
     color: #555;
 }
+
 
 .project-image {
     max-width: 25%;
@@ -423,6 +450,35 @@ div.project-image {
     max-width: 40%;
     border-radius: 20em;
     overflow: hidden;
+}
+
+.thumbnail {
+    width: 5%;
+    vertical-align: middle;
+}
+
+.aside {
+    width: 85%;
+    margin: 1.5em auto;
+    padding: 1em 1.5em;
+    background: #EEE;
+    border-left: 0.5em solid #AAA;
+}
+
+.warning {
+    width: 85%;
+    margin: 1.5em auto;
+    padding: 1em 1.5em;
+    background: #EEE;
+    border-left: 0.5em solid #CC0010;
+}
+
+.tip {
+    width: 85%;
+    margin: 1.5em auto;
+    padding: 1em 1.5em;
+    background: #EEE;
+    border-left: 0.5em solid #21A521;
 }
 
 
