@@ -133,7 +133,7 @@
 );</pre>
             </p>
 
-            <p>For more info on data types, <a href="https://www.postgresql.org/docs/9.6/static/datatype.html" title="PostgreSQL Documentation" target="_blank">see the docs</a> or <a href="https://www.tutorialspoint.com/postgresql/postgresql_data_types.htm" title="TutorialsPoint: PostgreSQL Data Types" target="_blank">TutorialsPoint</a>.</p>
+            <p>For more info on data types, <a href="https://www.postgresql.org/docs/current/static/datatype.html" title="PostgreSQL Documentation" target="_blank">see the docs</a> or <a href="https://www.tutorialspoint.com/postgresql/postgresql_data_types.htm" title="TutorialsPoint: PostgreSQL Data Types" target="_blank">TutorialsPoint</a>.</p>
 
             <p class="tip">SQL keywords are case-insensitive, so you don't have to type them in uppercase.  It's just common to write them that way.</p>
 
@@ -151,11 +151,11 @@
             <article class="project-description-artsy">
 
             <p>All of the code below is run in Terminal.</p>
-            <p>To install without Homebrew, see <a href="https://www.postgresql.org/docs/9.6/static/install-short.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a>.</p>
+            <p>To install without Homebrew, see <a href="https://www.postgresql.org/docs/current/static/install-short.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a>.</p>
 
             <h2>Uninstall Old Versions</h2>
 
-            <p><a href="http://www.postgresql.org/docs/9.6/interactive/backup.html" title="PostgreSQL Documentation" target="_blank" >Back up data</a>.</p>
+            <p><a href="http://www.postgresql.org/docs/current/interactive/backup.html" title="PostgreSQL Documentation" target="_blank" >Back up data</a>.</p>
 
             <p>Uninstall Homebrew version(s) of PostgreSQL.  <code>--force</code> uninstalls <strong>all</strong> versions.</p>
 
@@ -163,11 +163,11 @@
 
             <p>Uninstall other things manually.</p>
 
-            <p><a href="http://www.russbrooks.com/2010/11/25/install-postgresql-9-on-os-x" title="russbrooks" target="_blank"> russbrooks.com</a> had a couple other commands that didn't work for me. 9.6 is the PostgreSQL version number. Change as appropriate.</p>
+            <p><a href="http://www.russbrooks.com/2010/11/25/install-postgresql-9-on-os-x" title="russbrooks" target="_blank"> russbrooks.com</a> had a couple other commands that didn't work for me. current is the PostgreSQL version number. Change as appropriate.</p>
 
-            <pre class="terminal">sudo rm -rf /Applications/PostgreSQL\ <em>9.6</em>
+            <pre class="terminal">sudo rm -rf /Applications/PostgreSQL\ <em>current</em>
 sudo rm -rf /etc/postgres-reg.ini
-sudo rm -rf /Library/StartupItems/postgresql-<em>9.6</em>
+sudo rm -rf /Library/StartupItems/postgresql-<em>current</em>
 sudo rm -rf /Library/PostgreSQL/<em>9.6</em></pre>
 
             <p><code>rm</code> by itself removes (deletes) a file. <code>rm -r</code> recursively deletes a directory. Adding <code>-f</code> (<code>rm -rf</code>) forces the deletion.</p>
@@ -213,7 +213,7 @@ initdb /usr/local/var/<em>postgres</em></pre>
 
             <p>After psql starts, you'll see <code>postgres=#</code> as the prompt.  When you enter <code>\l</code> to list all the databases &mdash; and assuming <em>postgres</em> is the only database that was initialized since installing PostgreSQL &mdash; there should be 3 databases listed: postgres, template0, template1.</p>
 
-            <p>For more psql goodness, <a href="https://www.postgresql.org/docs/9.6/static/app-psql.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>
+            <p>For more psql goodness, <a href="https://www.postgresql.org/docs/current/static/app-psql.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>
 
             <p>If you get error messages about a role (user) or a database not existing...</p>
 
@@ -223,7 +223,7 @@ initdb /usr/local/var/<em>postgres</em></pre>
 
             <pre class="terminal">createuser -P -s -e -d <em>some_username</em></pre>
 
-            <p> <code>-P</code> will prompt you for a password for the new user.  <code>-s</code> makes the new user a superuser.  <code>-e</code> echoes the commands that createuser generates and sends them to the server (I don't know what this means).  <code>-d</code> allows the new user to create databases.  See <a href="http://www.postgresql.org/docs/9.6/static/app-createuser.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a> for more details.
+            <p> <code>-P</code> will prompt you for a password for the new user.  <code>-s</code> makes the new user a superuser.  <code>-e</code> echoes the commands that createuser generates and sends them to the server (I don't know what this means).  <code>-d</code> allows the new user to create databases.  See <a href="http://www.postgresql.org/docs/current/static/app-createuser.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a> for more details.
             </p>
 
             <h2>Create Database</h2>
@@ -234,7 +234,7 @@ initdb /usr/local/var/<em>postgres</em></pre>
 
             <p><code>-O</code> assigns a user as the owner of the database.  Add <code>-w</code> if you want don't want a password required.</p>
             
-            <p>See <a href="http://www.postgresql.org/docs/9.6/static/app-createdb.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a> for more details.</p>
+            <p>See <a href="http://www.postgresql.org/docs/current/static/app-createdb.html" title="PostgreSQL Documentation" target="_blank">PostgreSQL Documentation</a> for more details.</p>
 
             <h2>Delete Database</h2>
 
@@ -304,7 +304,7 @@ Garfield,5,cat</pre>
 
             <p>You also don't need to write out all the column names if there is a one-to-one match between the columns in the table and the columns in the file.  In our <em>pets</em> example, we wrote out the column names because there is a mismatch: the table includes an <em>id</em> column, while the csv file doesn't.</p>
 
-            <p>For more info about <code>COPY</code>, <a href="https://www.postgresql.org/docs/9.6/static/sql-copy.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>            
+            <p>For more info about <code>COPY</code>, <a href="https://www.postgresql.org/docs/current/static/sql-copy.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>            
 
             </article>
 
@@ -319,7 +319,7 @@ Garfield,5,cat</pre>
 
             <p>Some example queries (in green) and their outputs (in white).  The commands are entered in psql (so the prompt looks something like <code>postgres=#</code>).</p>
 
-            <p>For more info on queries, <a href="https://www.postgresql.org/docs/9.6/static/tutorial-select.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>
+            <p>For more info on queries, <a href="https://www.postgresql.org/docs/current/static/tutorial-select.html" title="PostgreSQL Documentation" target="_blank">see the docs</a>.</p>
 
             <h2>SELECT: General Format</h2>
 
@@ -449,19 +449,37 @@ Garfield,5,cat</pre>
  Toto   |   4 | dog
 (6 rows)</pre>
 
-            <p></p>
+            <p>To get the familiar kind of output that aggregates data into groups (instead of showing every record in the group), <code>SELECT</code> and <code>GROUP BY</code> the column you want to collapse into groups.  You can also get the counts for each group if you run the <code>COUNT</code> function.</p>
 
-            <pre class="terminal"></pre>
+            <pre class="terminal">SELECT type, COUNT(id) AS NumberOfPets FROM pets GROUP BY type ORDER BY NumberOfPets DESC;</pre>
 
-            <pre></pre>
+            <pre>  type  | numberofpets
+--------+--------------
+ dog    |            4
+ cat    |            3
+ fish   |            1
+ turtle |            1
+ rabbit |            1
+ mouse  |            1
+(6 rows)</pre>
+
+            <p>Same thing, except there's a <code>LIMIT</code>.  The limit is applied after the sorting.</p>
+
+            <pre class="terminal">SELECT type, COUNT(id) AS NumberOfPets FROM pets GROUP BY type ORDER BY NumberOfPets DESC LIMIT 3;</pre>
+
+            <pre> type | numberofpets
+------+--------------
+ dog  |            4
+ cat  |            3
+ fish |            1
+(3 rows)</pre>
 
 
 
 
 
 
-
-
+            <p><a href="https://www.postgresql.org/docs/current/static/functions-array.html" title="PostgreSQL Documentation">see the docs</a>.</p>
 
             
             <p></p>
@@ -509,9 +527,9 @@ SELECT name, type, age FROM pets WHERE type != 'dog' AND age > 3 ORDER BY age DE
 
             <h2>Saving the Output from Queries to a File</h2>
 
-            <p>The following will save the output to a file <em>instead of</em> displaying it on the screen, and it will keep doing so until you switch it off by entering <code>\o</code> at the psql prompt again.</p>
-
             <p>From the psql prompt (like <code>postgres=#</code>):</p>
+
+            <!-- <p>The following will save the output to a file <em>instead of</em> displaying it on the screen, and it will keep doing so until you switch it off by entering <code>\o</code> at the psql prompt again.</p>
 
             <pre class="terminal">\o '/path/to/file/file-name.txt'</pre>
 
@@ -521,7 +539,25 @@ SELECT name, type, age FROM pets WHERE type != 'dog' AND age > 3 ORDER BY age DE
 
             <p>To send the output to the console screen again:</p>
 
-            <pre class="terminal">\o</pre>
+            <pre class="terminal">\o</pre> -->
+
+            <pre class="terminal">COPY '/path/to/file/file-name.csv' DELIMITER ',' CSV HEADER;</pre>
+
+            <p>Example:</p>
+
+            <pre class="terminal">COPY (SELECT name, age, id FROM pets WHERE type = 'dog') TO '/Users/kathychang/Desktop/dogs.csv' DELIMITER ',' CSV HEADER;</pre>
+
+            <p>Use <code>\COPY</code> instead of <code>COPY</code> if you need admin privileges.</p>
+
+            
+
+            <p>For more info on <code>COPY</code>, <a href="https://www.postgresql.org/docs/current/static/sql-copy.html" title="PostgreSQL Documentation">see the docs</a> and <a href="http://stackoverflow.com/questions/1120109/export-postgres-table-to-csv-file-with-headings" title="StackOverflow">Stack Overflow</a>.</p>
+
+            <h2>REFERENCES</h2>
+
+            <p><a href="http://www.w3resource.com/PostgreSQL/postgresql-subqueries.php" title="PostgreSQL Subqueries" target="_blank">PostgreSQL Subqueries</a></p>
+
+            
 
             </article>
 
