@@ -109,6 +109,18 @@
 
             <p class="tip">Make sure to start the server in the folder with the files you want served.</p>
 
+            <p>If the port number is already in use, kill the process or use a different port number.</p>
+
+            <p>To kill a process, first find the id of the process (PID) using the port:</p>
+            <pre class="terminal">sudo lsof -i:<em>port_number</em></pre>
+
+            <p>And then end the process:</p>
+            <pre class="terminal">kill <em>PID_number</em></pre>
+
+            <p>Example:</p>
+            <pre class="terminal">sudo lsof -i:<em>8888</em></pre>
+            <pre class="terminal">kill <em>13651</em></pre>
+
             <h2>Add an index.html file to the project folder:</h2>
 
             <pre>&lt;!DOCTYPE html&gt;
