@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/nychang
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nychang.com
+  * I am nychang (https://keybase.io/nychang) on keybase.
+  * I have a public key ASDTFWt9UJv7FHQ0fZjsGBikDde0VOzL8EYb5n9vVX8L6Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d3156b7d509bfb1474347d98ec1818a40dd7b454eccbf0461be67f6f557f0be80a",
+      "host": "keybase.io",
+      "kid": "0120d3156b7d509bfb1474347d98ec1818a40dd7b454eccbf0461be67f6f557f0be80a",
+      "uid": "8044dd389d211ef346d0ac3e1315cc19",
+      "username": "nychang"
+    },
+    "merkle_root": {
+      "ctime": 1561519940,
+      "hash": "65aa04b9616df57a330bab97d685536406224d10ebb065e29009bfa162f6a3978a4663a0d4888029f2e3ab46e4237229615f668d29b75563e5c488e4be858556",
+      "hash_meta": "3c656cd25d36772adae8d891f0277d3f9e1d5d67ff704d666f7b7ca5443ed8f0",
+      "seqno": 5640576
+    },
+    "service": {
+      "entropy": "ZZUv5AKXZrkE4wp0Qv1wyari",
+      "hostname": "nychang.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.1.0"
+  },
+  "ctime": 1561520061,
+  "expire_in": 504576000,
+  "prev": "56611cd3339039c4a50f972ef6ff8d1e0178a858e6a6399fdce2907c91f6037a",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg0xVrfVCb+xR0NH2Y7BgYpA3XtFTsy/BGG+Z/b1V/C+gKp3BheWxvYWTESpcCBsQgVmEc0zOQOcSlD5cu9v+NHgF4qFjmpjmf3OKQfJH2A3rEIGnE8QTiDy/OzLXjGl2KKfZ6KJjmvPcjO6Z2kT27nr96AgHCo3NpZ8RAJNlWgTuYqCaAkmO0s49ipXwEDVQQWv7NrToACtl3D0l8bOPrvvcQBildoC9upeRprXAWuIiFXCnGQV7t17k4DqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKd3KZwGe7SsJOE5reJMRR0k4jnWU4jjc+OTWeYzuehTo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nychang
+
+==================================================================
